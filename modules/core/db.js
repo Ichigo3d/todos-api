@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 module.exports = function dbConnect() {
   mongoose.connect(
-    'mongodb+srv://ichigo3d:Le@rning!984@cluster0.nb2vx7y.mongodb.net/?retryWrites=true&w=majority',
+    'mongodb+srv://ichigo3d:Le%40rning!984@cluster0.nb2vx7y.mongodb.net/?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
