@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
 module.exports = function dbConnect() {
-  mongoose.connect(process.env.DB_URL, {
+  mongoose.connect(process.env.DB_URL.toString(), {
     useUnifiedTopology: true,
+    useNewUrlParser: true,
   });
   const db = mongoose.connection;
   db.on('error', console.error.bind(console, 'connection error:'));
