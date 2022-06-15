@@ -16,7 +16,7 @@ cors(app);
 routes(app);
 errorHandler(app);
 
-app.listen(PORT, (error) => {
+app.listen(PORT, '0.0.0.0', (error) => {
   if (error) console.log('Error in server setup');
   console.log('Server listening on Port:', PORT);
 });
